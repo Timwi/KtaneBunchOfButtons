@@ -318,9 +318,9 @@ namespace BunchOfButtonsLib
             foreach (var jumps in allJumps)
             {
                 var letterPositions = Enumerable.Range(0, word.Length).Select(i => new Coord(GridWidth, GridHeight, i).AddYWrap((jumps >> (2 * i)) & 0x03)).ToArray();
-                var placements = allPlacements.Where(tup => letterPositions.All((cell, ix) =>
+                var placements = allPlacements.Where(polyPlacement => letterPositions.All((cell, ix) =>
                 {
-                    var (poly, place) = tup;
+                    var (poly, place) = polyPlacement;
                     var dx = (cell.X - place.X + GridWidth) % GridWidth;
                     var dy = (cell.Y - place.Y + GridHeight) % GridHeight;
                     if (!poly.Has(dx, dy))
