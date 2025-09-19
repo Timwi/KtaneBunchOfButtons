@@ -87,7 +87,7 @@ public class CyanButtonScript : MonoBehaviour
             _buttonPositions[4] != 4 &&
             _buttonPositions[5] != 5);
 
-        Debug.LogFormat("[The Cyan Button #{0}] The positions of the buttons at each stage are: {1}.", _moduleId, Enumerable.Range(0, 6).Select(i => _positionNames[i]).Join(", "));
+        Debug.LogFormat("[The Cyan Button #{0}] The positions of the buttons at each stage are: {1}.", _moduleId, Enumerable.Range(0, 6).Select(i => _positionNames[_buttonPositions[i]]).Join(", "));
         Debug.LogFormat("[The Cyan Button #{0}] The stages in which the button must be pressed are: {1}.",
             _moduleId, Enumerable.Range(0, 6).Where(st => _correctPresses[st]).Select(i => i + 1).Join(", "));
     }
