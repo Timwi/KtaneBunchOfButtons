@@ -234,7 +234,6 @@ public class AquaButtonScript : MonoBehaviour
 
             case Stage.Reset:
                 _stage = Stage.Fruits;
-                _wordProgress = 0;
                 break;
         }
     }

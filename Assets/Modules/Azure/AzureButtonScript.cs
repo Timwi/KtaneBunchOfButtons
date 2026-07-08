@@ -278,7 +278,6 @@ public class AzureButtonScript : MonoBehaviour
 
             case Stage.Reset:
                 _stage = Stage.SETSymbols;
-                _wordProgress = 0;
                 break;
         }
     }

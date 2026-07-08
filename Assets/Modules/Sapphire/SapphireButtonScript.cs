@@ -158,7 +158,6 @@ public class SapphireButtonScript : MonoBehaviour
 
             case Stage.Reset:
                 _stage = Stage.Bitmaps;
-                _wordProgress = 0;
                 break;
         }
     }

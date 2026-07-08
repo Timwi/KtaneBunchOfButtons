@@ -219,7 +219,6 @@ public class BlueButtonScript : MonoBehaviour
 
             case Stage.Reset:
                 _stage = Stage.Polyominoes;
-                _wordProgress = 0;
                 break;
         }
     }

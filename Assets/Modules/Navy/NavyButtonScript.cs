@@ -214,7 +214,6 @@ public class NavyButtonScript : MonoBehaviour
 
             case Stage.Reset:
                 _stage = Stage.GreekLetters;
-                _wordProgress = 0;
                 break;
         }
     }
